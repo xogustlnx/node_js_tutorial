@@ -22,7 +22,7 @@ exports.create=async(req,res) =>{
       googleFormId: form.id,
       title :  question.title,
       desc : question.desc,
-      qType :  question.qType,
+      qType :  question.qtype,
     })
     await options.forEach(async(option,index)=>{
       const formQuestionOption=await FormQuestionOption.create({
