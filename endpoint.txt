@@ -1,0 +1,6 @@
+database-deathvalley-1.claz00ejr9nj.us-east-1.rds.amazonaws.com
+
+ec2-3-83-147-107.compute-1.amazonaws.com
+
+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
+mysql -h database-deathvalley-1.claz00ejr9nj.us-east-1.rds.amazonaws.com -P 3306 -u admin -p

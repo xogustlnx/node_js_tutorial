@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "admin",
+    "password": "0165132889a",
+    "database": "database-deathvalley-1",
+    "host": "database-deathvalley-1.claz00ejr9nj.us-east-1.rds.amazonaws.com",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "admin",
+    "password": "0165132889a",
+    "database": "database-deathvalley-1",
+    "host": "database-deathvalley-1.claz00ejr9nj.us-east-1.rds.amazonaws.com",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "admin",
+    "password": "0165132889a",
+    "database": "database-deathvalley-1",
+    "host": "database-deathvalley-1.claz00ejr9nj.us-east-1.rds.amazonaws.com",
+    "dialect": "mysql"
+  }
+}
