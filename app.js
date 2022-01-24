@@ -99,6 +99,14 @@ app.get("/googleformentire/:id", async (req,res) => {
   res.json({result: googleForm})
 })
 
+app.get("/googleformentire", async (req,res) => {
+  const googleForm = await GoogleForm.findAll({
+    include: [{model : FormQuestion, include: FormQuestionOption }]
+  })
+  
+  res.json({result: googleForm})
+})
+
 app.delete("/googleform/delete/:id", async (req,res) => {
   const googleFormId = req.params.id
   const deletedEntry = await GoogleForm.destroy({
