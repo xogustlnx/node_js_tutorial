@@ -101,7 +101,7 @@ app.get("/googleformentire/:id", async (req,res) => {
 
 app.get("/googleformentire", async (req,res) => {
   const googleForm = await GoogleForm.findAll({
-    include: [{model : FormQuestion, include: FormQuestionOption, order: [["id", "ASC"]] }],
+    include: [{model : FormQuestion, include: FormQuestionOption, order: [["id", "DESC"]] }],
     order: [["id", "DESC"]]
   })
   
