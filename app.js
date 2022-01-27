@@ -104,8 +104,8 @@ app.get("/googleformentire", async (req,res) => {
     include: 
     [{model : FormQuestion, include: [{model :FormQuestionOption}]}],
     order: [
-      ["id", "DESC"]
-      [FormQuestion, "id", "ASC"]
+      ["id", "DESC"],
+      [FormQuestion, "id", "ASC"],
       [FormQuestionOption, "id", "ASC"]
     ]
   })
